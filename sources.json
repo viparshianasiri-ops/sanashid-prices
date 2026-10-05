@@ -1,0 +1,495 @@
+{
+ "interval_minutes": 30,
+ "host": "127.0.0.1",
+ "port": 8765,
+ "version": 5,
+ "queries": [
+  "پنل خورشیدی",
+  "اینورتر خورشیدی",
+  "سانورتر",
+  "باتری خورشیدی",
+  "باتری لیتیومی خورشیدی",
+  "استراکچر پنل خورشیدی",
+  "شارژ کنترلر خورشیدی",
+  "سازه پنل خورشیدی",
+  "استراکچر خورشیدی",
+  "پایه پنل خورشیدی",
+  "کلمپ پنل خورشیدی",
+  "ریل پنل خورشیدی"
+ ],
+ "torob": {
+  "enabled": true,
+  "pages_per_query": 4,
+  "sellers": true,
+  "seller_products_per_run": 60
+ },
+ "emalls": {
+  "enabled": true,
+  "pages": [
+   "https://emalls.ir/لیست-قیمت_پنل-خورشیدی-و-کنترلر~Category~51720"
+  ]
+ },
+ "divar": {
+  "enabled": true,
+  "city_ids": [
+   "1"
+  ]
+ },
+ "digikala": {
+  "enabled": true,
+  "pages_per_query": 2
+ },
+ "sheypoor": {
+  "enabled": true
+ },
+ "shops": [
+  {
+   "name": "سولارنیرو",
+   "url": "https://www.solarniroo.com",
+   "pages": [
+    "https://www.solarniroo.com/list/"
+   ]
+  },
+  {
+   "name": "هورایش",
+   "url": "https://hoorayesh.com",
+   "pages": [
+    "https://hoorayesh.com/solar-products-prise/",
+    "https://hoorayesh.com/product-category/سازه-خورشیدی/",
+    "https://hoorayesh.com/shop/",
+    "https://hoorayesh.com/product-category/solar-panel/",
+    "https://hoorayesh.com/product-category/solar-battery/",
+    "https://hoorayesh.com/product-category/solar-inverter/",
+    "https://hoorayesh.com/product-category/solar-controller/"
+   ]
+  },
+  {
+   "name": "تک اینورتر",
+   "url": "https://takinverter.com"
+  },
+  {
+   "name": "ایمن سولار",
+   "url": "https://imensolar.ir"
+  },
+  {
+   "name": "نوین سولار",
+   "url": "https://novinsolar.com"
+  },
+  {
+   "name": "آریا نوین پارس",
+   "url": "https://arianovinparse.ir"
+  },
+  {
+   "name": "ساناشید خاورمیانه",
+   "url": "https://sanashid.com"
+  },
+  {
+   "name": "سولار گستران",
+   "url": "https://solargostaran.com"
+  },
+  {
+   "name": "سولار آریو",
+   "url": "https://novinario.com"
+  },
+  {
+   "name": "ماناسازان",
+   "url": "https://manasazan.ir"
+  },
+  {
+   "name": "خورشید لاله‌زار",
+   "url": "https://www.khorshidlalezar.ir"
+  },
+  {
+   "name": "اورهان (سازه)",
+   "url": "https://www.orhanco.com",
+   "pages": [
+    "https://www.orhanco.com/solar-panel-structure/"
+   ]
+  },
+  {
+   "name": "آراپل مارکت (سازه)",
+   "url": "https://arapelmarket.com",
+   "pages": [
+    "https://arapelmarket.com/product-category/power-solar/structure/"
+   ]
+  },
+  {
+   "name": "تکسا رسام کاسپین (سازه)",
+   "url": "https://texa-co.ir",
+   "pages": [
+    "https://texa-co.ir/category/solar-structure/"
+   ]
+  },
+  {
+   "name": "پروسازه (سازه)",
+   "url": "https://prosazeh.com",
+   "pages": [
+    "https://prosazeh.com/product-category/استراکچر-و-پایه-پنل-خورشیدی/"
+   ]
+  },
+  {
+   "name": "آهن وان (سازه)",
+   "url": "https://ahan1.com",
+   "mode": "html",
+   "pages": [
+    "https://ahan1.com/Category/metal-structure/solar-panel-structure/"
+   ]
+  },
+  {
+   "name": "سولار سازه",
+   "url": "https://www.solarsaze.com"
+  },
+  {
+   "name": "شاهین فلز سپاهان (کلمپ)",
+   "url": "https://shahinfelezsepahan.com",
+   "pages": [
+    "https://shahinfelezsepahan.com/steel/solar-panel-clamps/"
+   ]
+  },
+  {
+   "name": "درفک سازه رایان",
+   "url": "https://dorfaksazehrayan.com"
+  },
+  {
+   "name": "آموت (پایه پنل)",
+   "url": "https://amootsec.com",
+   "mode": "html",
+   "pages": [
+    "https://amootsec.com/pr/576/پایه-پنل-خورشیدی-یا-استراکچر-خورشیدی"
+   ]
+  },
+  {
+   "name": "سولار پرتو سبز",
+   "url": "https://www.solarparto.com"
+  },
+  {
+   "name": "شاهدژ سولار",
+   "url": "https://shahdejsolar.ir"
+  },
+  {
+   "name": "زیپا",
+   "url": "https://zipa.shop"
+  },
+  {
+   "name": "مستر انرژی پلاس",
+   "url": "https://mrenergyplus.com"
+  },
+  {
+   "name": "همیار سولار",
+   "url": "https://hamyarsolar.com"
+  },
+  {
+   "name": "تکسان صنعت",
+   "url": "https://techsunsanat.ir",
+   "pages": [
+    "https://techsunsanat.ir/shop/"
+   ]
+  },
+  {
+   "name": "دکتر باتری",
+   "url": "https://doctor-battery.com"
+  },
+  {
+   "name": "تابش الکتریک",
+   "url": "https://tabesh-electric.com"
+  },
+  {
+   "name": "ایرمان مارکت",
+   "url": "https://irman-market.ir"
+  },
+  {
+   "name": "فروشگاه سانورتر",
+   "url": "https://ssunverter.ir"
+  },
+  {
+   "name": "سول ایران",
+   "url": "https://sol-iran.com"
+  },
+  {
+   "name": "الک ۷۲۴",
+   "url": "https://elec724.com"
+  },
+  {
+   "name": "سوراسل",
+   "url": "https://sunbattery.ir"
+  },
+  {
+   "name": "پنل خورشیدی ۲",
+   "url": "https://panelkhorshidi2.ir"
+  },
+  {
+   "name": "لیمو سولار",
+   "url": "https://limoo.solar"
+  },
+  {
+   "name": "ایران صنعت",
+   "url": "https://www.iransanatgroup.com"
+  },
+  {
+   "name": "پندار الکترونیک",
+   "url": "https://pendarelectronic.com"
+  },
+  {
+   "name": "پنل خورشیدی دات کام",
+   "url": "https://panelkhorshidi.com"
+  },
+  {
+   "name": "افق زرفام",
+   "url": "https://ofoghzarfam.com"
+  },
+  {
+   "name": "برق‌رسان",
+   "url": "https://barghresun.com"
+  },
+  {
+   "name": "سونر شاپ",
+   "url": "https://sonershop.ir"
+  },
+  {
+   "name": "نورسان",
+   "url": "https://noursun.com"
+  }
+ ],
+ "removed": [],
+ "usd": {
+  "manual_toman": 0
+ },
+ "global": {
+  "enabled": true,
+  "spot": true,
+  "stores": [
+   {
+    "name": "PowMr (سازنده)",
+    "url": "https://powmr.com"
+   },
+   {
+    "name": "Easun Power (سازنده)",
+    "url": "https://www.easunpower.com"
+   },
+   {
+    "name": "SunGoldPower (سازنده)",
+    "url": "https://sungoldpower.com"
+   },
+   {
+    "name": "Renogy (سازنده)",
+    "url": "https://www.renogy.com"
+   },
+   {
+    "name": "Rich Solar (سازنده)",
+    "url": "https://richsolar.com"
+   },
+   {
+    "name": "ECO-WORTHY (سازنده)",
+    "url": "https://www.eco-worthy.com"
+   },
+   {
+    "name": "BougeRV (سازنده)",
+    "url": "https://www.bougerv.com"
+   },
+   {
+    "name": "LiTime (سازندهٔ باتری)",
+    "url": "https://www.litime.com"
+   },
+   {
+    "name": "Vatrer (سازندهٔ باتری)",
+    "url": "https://www.vatrerpower.com"
+   }
+  ]
+ },
+ "leads": {
+  "enabled": false,
+  "per_day": 10,
+  "label": "داروخانه",
+  "keyword": "داروخانه",
+  "pages": [
+   "https://balad.ir/blog/tehran-pharmacy-list/",
+   "https://www.drsaina.com/pharmacy/tehran-list",
+   "https://www.bank-mobile.ir/pharmacy-tehran",
+   "https://adorateb.com/pharmacy-cat/استان-تهران/",
+   "https://tehranmoble.ir/blog/tehran-boarding-pharmacies/",
+   "https://digidaroo.org/لیست-داروخانه-های-دولتی-تهران/",
+   "https://mag.sabads.com/blog/the-best-pharmacy-in-tehran/"
+  ]
+ },
+ "fob": {
+  "enabled": true,
+  "models": [
+   {
+    "label": "Jinko 625W",
+    "q": "Jinko 625W Solar Panel",
+    "cat": "panel",
+    "brand": "Jinko",
+    "watts": 625
+   },
+   {
+    "label": "Jinko 585W",
+    "q": "Jinko 585W Solar Panel",
+    "cat": "panel",
+    "brand": "Jinko",
+    "watts": 585
+   },
+   {
+    "label": "Jinko 715W",
+    "q": "Jinko 715W Solar Panel",
+    "cat": "panel",
+    "brand": "Jinko",
+    "watts": 715
+   },
+   {
+    "label": "Longi 550W",
+    "q": "Longi 550W Solar Panel",
+    "cat": "panel",
+    "brand": "Longi",
+    "watts": 550
+   },
+   {
+    "label": "Longi 585W",
+    "q": "Longi 585W Solar Panel",
+    "cat": "panel",
+    "brand": "Longi",
+    "watts": 585
+   },
+   {
+    "label": "Longi 630W",
+    "q": "Longi 630W Solar Panel",
+    "cat": "panel",
+    "brand": "Longi",
+    "watts": 630
+   },
+   {
+    "label": "JA Solar 550W",
+    "q": "JA Solar 550W Solar Panel",
+    "cat": "panel",
+    "brand": "JA Solar",
+    "watts": 550
+   },
+   {
+    "label": "JA Solar 590W",
+    "q": "JA Solar 590W Solar Panel",
+    "cat": "panel",
+    "brand": "JA Solar",
+    "watts": 590
+   },
+   {
+    "label": "JA Solar 625W",
+    "q": "JA Solar 625W Solar Panel",
+    "cat": "panel",
+    "brand": "JA Solar",
+    "watts": 625
+   },
+   {
+    "label": "Trina 580W",
+    "q": "Trina 580W Solar Panel",
+    "cat": "panel",
+    "brand": "Trina",
+    "watts": 580
+   },
+   {
+    "label": "Trina 620W",
+    "q": "Trina 620W Solar Panel",
+    "cat": "panel",
+    "brand": "Trina",
+    "watts": 620
+   },
+   {
+    "label": "Trina 700W",
+    "q": "Trina 700W Solar Panel",
+    "cat": "panel",
+    "brand": "Trina",
+    "watts": 700
+   },
+   {
+    "label": "Canadian Solar 600W",
+    "q": "Canadian Solar 600W Solar Panel",
+    "cat": "panel",
+    "brand": "Canadian",
+    "watts": 600
+   },
+   {
+    "label": "Risen 700W",
+    "q": "Risen 700W Solar Panel",
+    "cat": "panel",
+    "brand": "Risen",
+    "watts": 700
+   },
+   {
+    "label": "Growatt SPF 6000 ES Plus",
+    "q": "Growatt SPF 6000 ES Plus",
+    "cat": "inverter",
+    "brand": "Growatt",
+    "kw": 6,
+    "must": [
+     "growatt",
+     "6000"
+    ]
+   },
+   {
+    "label": "Growatt SPE 12000 ES",
+    "q": "Growatt SPE 12000 ES",
+    "cat": "inverter",
+    "brand": "Growatt",
+    "kw": 12,
+    "must": [
+     "growatt",
+     "12000"
+    ]
+   },
+   {
+    "label": "Growatt MOD 10KTL3-X",
+    "q": "Growatt MOD 10KTL3-X",
+    "cat": "inverter",
+    "brand": "Growatt",
+    "kw": 10,
+    "must": [
+     "growatt",
+     "mod",
+     "10k"
+    ]
+   },
+   {
+    "label": "Growatt MID 25KTL3-X",
+    "q": "Growatt MID 25KTL3-X",
+    "cat": "inverter",
+    "brand": "Growatt",
+    "kw": 25,
+    "must": [
+     "growatt",
+     "25k"
+    ]
+   },
+   {
+    "label": "Deye 8kW Hybrid",
+    "q": "Deye SUN-8K-SG01LP1 hybrid inverter",
+    "cat": "inverter",
+    "brand": "Deye",
+    "kw": 8,
+    "must": [
+     "deye",
+     "8k"
+    ]
+   },
+   {
+    "label": "Deye 12kW Hybrid",
+    "q": "Deye SUN-12K-SG04LP3 hybrid inverter",
+    "cat": "inverter",
+    "brand": "Deye",
+    "kw": 12,
+    "must": [
+     "deye",
+     "12k"
+    ]
+   },
+   {
+    "label": "MUST PV18 5.2kW",
+    "q": "MUST PV18-5248 PRO inverter",
+    "cat": "inverter",
+    "brand": "Must",
+    "kw": 5.2,
+    "must": [
+     "must",
+     "pv18"
+    ]
+   }
+  ]
+ }
+}
