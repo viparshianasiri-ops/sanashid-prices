@@ -25,7 +25,7 @@ import urllib.parse
 import urllib.request
 import webbrowser
 import zlib
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, wait as _futures_wait
 from html.parser import HTMLParser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
@@ -1648,8 +1648,13 @@ def run_all():
                 db().execute("UPDATE items SET active=0 WHERE source=?", (r["source"],))
         db().commit()
     log.info("run started: %d sources", len(jobs))
-    with ThreadPoolExecutor(max_workers=10) as ex:
-        list(ex.map(lambda j: run_job(j, run_ts), jobs))
+    # سقف زمانی: اگر سایتی جواب ندهد، بقیهٔ کار (ثبت شاخص‌ها و نرخ دلار) معطل آن نمی‌ماند
+    ex = ThreadPoolExecutor(max_workers=10)
+    futs = [ex.submit(run_job, j, run_ts) for j in jobs]
+    _done, pending = _futures_wait(futs, timeout=float(cfg.get("run_deadline_minutes", 12)) * 60)
+    if pending:
+        log.warning("deadline reached: %d sources still running; continuing without them", len(pending))
+    ex.shutdown(wait=False)
     if cfg["torob"].get("enabled") and cfg["torob"].get("sellers", True):
         run_job(("torobshops", "فروشندگان ترب", lambda: scrape_torob_sellers(cfg)), run_ts)
     STATE["running"] = False
@@ -1826,7 +1831,8 @@ def main():
     refresh_payload()
     if once:
         scheduler(once=True)
-        return
+        logging.shutdown()
+        os._exit(0)      # منتظر سایت‌هایی که هنوز جواب نداده‌اند نمی‌ماند
     host, port = cfg.get("host", "127.0.0.1"), int(cfg.get("port", 8765))
     try:
         server = ThreadingHTTPServer((host, port), Handler)

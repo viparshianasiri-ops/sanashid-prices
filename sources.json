@@ -36,7 +36,7 @@
   ]
  },
  "digikala": {
-  "enabled": true,
+  "enabled": false,
   "pages_per_query": 2
  },
  "sheypoor": {
@@ -491,5 +491,6 @@
     ]
    }
   ]
- }
+ },
+ "run_deadline_minutes": 12
 }
