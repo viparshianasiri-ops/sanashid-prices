@@ -10,11 +10,11 @@ permissions:
   actions: write
 concurrency:
   group: prices
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 25
     environment:
       name: github-pages
     steps:
